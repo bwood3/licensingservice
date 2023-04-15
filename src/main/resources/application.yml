@@ -5,6 +5,11 @@ spring:
     active: dev
   config:
     import: configserver:http://localhost:8071
+  datasource:
+    url: jdbc:postgresql://localhost:5433/licensingdb
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
 
 logging:
   level:
